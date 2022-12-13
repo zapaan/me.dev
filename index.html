@@ -6,26 +6,73 @@
     <title>Francky</title>
     <style>
       body {
-        //background-color: #f0ede8;
+        /* background-color: #f0ede8; */
         background-color: #eef8e4;
-        //background-color: #e4f4d5;
+        /* background-color: #e4f4d5; */
         color: #dab83a;
+        font: 1.6em bolder;
         display: flex;
         align-items: center;
         justify-content: center;
         min-height: 88vh;
       }
-
-      div {
+      
+      #content {
         display: flex;
+        max-width: 33vw;
+        min-width: 33vw;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        column-gap: 1em;
+        row-gap: 1em;
+      }
+      #intro {
+        text-align: center;
+      }
+      #links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+        /* align-content: space-around; */
+        column-gap: 1em;
+        row-gap: 1em;
+        /* width: 25vw; */
+      }
+      #discord {
+        /* Padding to align logos and move text lower
+         but forces me to keep discord first, or it suxx when displaying
+         in a column because of the extra space :( */
+        padding-top: 1.4em;
+        display: flex;
+        flex-grow: 1;
+        max-width: 64px;
+        flex-direction: column;
+        align-items: center;
+        /* padding-top: 5px; */
+        color: #5865F2;
       }
     </style>
   </head>
   <body>
-    <div>
-      <a id="steam" href="https://steamcommunity.com/id/frokzapaan" target="_blank"><img src="steam-mark/steam.png" alt="Profil Steam" height="auto" width="64"/></a>
-      <a id="github" href="https://github.com/zapaan" target="_blank"><img src="github-mark/github-mark.png" alt="Profil Github" height="auto" width="64"/></a>
-      <a id="discord" href="https://discord.com/users/688405052515549210" target="_blank"><img src="discord-mark/discord-black.png" alt="Profil Discord" height="auto" width="64"/>Zapaan#0133</a>
+    <div id="content">
+      <div id="intro">Retrouvez-moi</div>
+      <div id="links">
+        <span id="discord">
+          <a href="https://discord.com/users/688405052515549210" target="_blank">
+            <img src="discord-mark/discord-black-64.png" alt="Profil Discord" height="auto" width="64"/>
+          </a>
+          Zapaan#0133
+        </span>
+        <a id="steam" href="https://steamcommunity.com/id/frokzapaan" target="_blank">
+          <img src="steam-mark/steam-64.png" alt="Profil Steam" height="auto" width="64"/>
+        </a>
+        <a id="github" href="https://github.com/zapaan" target="_blank">
+          <img src="github-mark/github-mark-64.png" alt="Profil Github" height="auto" width="64"/>
+        </a>
+      </div>
     </div>
   </body>
 </html>
